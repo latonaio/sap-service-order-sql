@@ -1,4 +1,4 @@
-CREATE TABLE `sap-service-order-sql-header-data`
+CREATE TABLE `sap-service-order-header-data`
 (
             `ServiceOrder`                        varchar(10) DEFAULT NULL,
 			`ServiceOrderType`                    varchar(4) DEFAULT NULL,
@@ -36,4 +36,3 @@ CREATE TABLE `sap-service-order-sql-header-data`
   PRIMARY KEY (`ServiceOrder`)
 ) ENGINE = InnoDB
  DEFAULT CHARSET = utf8mb4;
- 

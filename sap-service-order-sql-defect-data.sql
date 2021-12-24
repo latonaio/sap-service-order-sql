@@ -1,4 +1,4 @@
-CREATE TABLE `sap-service-order-sql-defect-data
+CREATE TABLE `sap-service-order-defect-data
 (
              `ServiceOrder`                         varchar(10) DEFAULT NULL,
 			 `SrvcDocTypeDefectCodeProfType`        varchar(2) DEFAULT NULL,
@@ -9,6 +9,6 @@ CREATE TABLE `sap-service-order-sql-defect-data
 			 `ServiceDefectCode`                    varchar(4) DEFAULT NULL,
 			 `ServiceDefectSchema`                  varchar(40) DEFAULT NULL,
   PRIMARY KEY (`ServiceOrder`, `SrvcDocTypeDefectCodeProfType`, `ServiceDefectSequence`),
-  CONSTRAINT `ServiceOrder_fk` FOREIGN KEY (`ServiceOrder`) REFERENCES`sap-service-order-sql-header-data`(`ServiceOrder`)
+  CONSTRAINT `ServiceOrder_fk` FOREIGN KEY (`ServiceOrder`) REFERENCES`sap-service-order-header-data`(`ServiceOrder`)
 ) ENGINE = InnoDB
 DEFAULT CHARSET = utf8mb4;
