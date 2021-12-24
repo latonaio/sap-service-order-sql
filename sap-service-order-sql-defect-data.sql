@@ -1,8 +1,8 @@
 CREATE TABLE `sap-service-order-defect-data
 (
-             `ServiceOrder`                         varchar(10) DEFAULT NULL,
-			 `SrvcDocTypeDefectCodeProfType`        varchar(2) DEFAULT NULL,
-			 `ServiceDefectSequence`                int(16) DEFAULT NULL,
+             `ServiceOrder`                         varchar(10) NOT NULL,
+			 `SrvcDocTypeDefectCodeProfType`        varchar(2) NOT NULL,
+			 `ServiceDefectSequence`                int(16) NOT NULL,
 			 `SrvcDocTypeDefectCodeProfile`         varchar(9) DEFAULT NULL,
 			 `ServiceDefectCodeCatalog`             varchar(2) DEFAULT NULL,
 			 `ServiceDefectCodeGroup`               varchar(8) DEFAULT NULL,

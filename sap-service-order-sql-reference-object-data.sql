@@ -1,6 +1,6 @@
 CREATE TABLE `sap-service-order-reference-object-data`
 (
-			`ServiceOrder`                      varchar(10) DEFAULT NULL,
+			`ServiceOrder`                      varchar(10) NOT NULL,
 			`ServiceReferenceEquipment`         varchar(18) DEFAULT NULL,
 			`ServiceRefFunctionalLocation`      varchar(40) DEFAULT NULL,
 			`SrvcRefObjIsMainObject`            tinyint(1) DEFAULT NULL,

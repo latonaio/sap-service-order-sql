@@ -1,6 +1,6 @@
 CREATE TABLE `sap-service-order-person-responsible-data`
 (
-			`ServiceOrder`                    varchar(10) DEFAULT NULL,
+			`ServiceOrder`                    varchar(10) NOT NULL,
 			`PersonResponsible`               varchar(10) DEFAULT NULL,
 			`CustMgmtPartnerIsMainPartner`    tinyint(1) DEFAULT NULL,
   PRIMARY KEY (`ServiceOrder`),

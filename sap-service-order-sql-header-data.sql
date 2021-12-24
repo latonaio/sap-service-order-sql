@@ -1,6 +1,6 @@
 CREATE TABLE `sap-service-order-header-data`
 (
-            `ServiceOrder`                        varchar(10) DEFAULT NULL,
+            `ServiceOrder`                        varchar(10) NOT NULL,
 			`ServiceOrderType`                    varchar(4) DEFAULT NULL,
 			`ServiceOrderUUID`                    varchar(36) DEFAULT NULL,
 			`ServiceOrderDescription`             varchar(40) DEFAULT NULL,

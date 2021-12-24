@@ -1,7 +1,7 @@
 CREATE TABLE `sap-service-order-item-data`
 (
-			`ServiceOrder`                         varchar(10) DEFAULT NULL,
-			`ServiceOrderItem`                     varchar(6) DEFAULT NULL,
+			`ServiceOrder`                         varchar(10) NOT NULL,
+			`ServiceOrderItem`                     varchar(6) NOT NULL,
 			`ServiceOrderUUID`                    varchar(36) DEFAULT NULL,
 			`ServiceOrderItemDescription`          varchar(40) DEFAULT NULL,
 			`ServiceObjectType`                    varchar(10) DEFAULT NULL,
