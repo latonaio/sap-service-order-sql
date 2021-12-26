@@ -1,8 +1,8 @@
-CREATE TABLE `sap-service-order-item-data`
+CREATE TABLE `sap_service_order_item_data`
 (
 			`ServiceOrder`                         varchar(10) NOT NULL,
 			`ServiceOrderItem`                     varchar(6) NOT NULL,
-			`ServiceOrderUUID`                    varchar(36) DEFAULT NULL,
+			`ServiceOrderUUID`                     varchar(36) DEFAULT NULL,
 			`ServiceOrderItemDescription`          varchar(40) DEFAULT NULL,
 			`ServiceObjectType`                    varchar(10) DEFAULT NULL,
 			`ServiceDocumentItemObjectType`        varchar(10) DEFAULT NULL,
@@ -32,16 +32,16 @@ CREATE TABLE `sap-service-order-item-data`
 			`ReferenceServiceRequest`              varchar(10) DEFAULT NULL,
 			`ReferenceServiceRequestItem`          varchar(6) DEFAULT NULL,
 			`ParentServiceOrderItem`               varchar(6) DEFAULT NULL,
-			`PlannedServiceStartDateTime`          datetime DEFAULT NULL,
-			`PlannedServiceEndDateTime`            datetime DEFAULT NULL,
-			`RequestedServiceStartDateTime`        datetime DEFAULT NULL,
-			`RequestedServiceEndDateTime`          datetime DEFAULT NULL,
+			`PlannedServiceStartDateTime`          varchar(80) DEFAULT NULL,
+			`PlannedServiceEndDateTime`            varchar(80) DEFAULT NULL,
+			`RequestedServiceStartDateTime`        varchar(80) DEFAULT NULL,
+			`RequestedServiceEndDateTime`          varchar(80) DEFAULT NULL,
 			`ActualServiceDuration`                varchar(9) DEFAULT NULL,
 			`ActualServiceDurationUnit`            varchar(3) DEFAULT NULL,
 			`ReferenceServiceOrderItem`            varchar(80) DEFAULT NULL,
 			`ProfitCenter`                         varchar(10) DEFAULT NULL,
 			`SrvcOrdItemCreditStatus`              varchar(1) DEFAULT NULL,
   PRIMARY KEY (`ServiceOrder`, `ServiceOrderItem`),
-  CONSTRAINT `ServiceOrder_fk` FOREIGN KEY (`ServiceOrder`) REFERENCES`sap-service-order-header-data`(`ServiceOrder`)
+  CONSTRAINT `SAPServiceOrderItemData_fk` FOREIGN KEY (`ServiceOrder`) REFERENCES`sap_service_order_header_data`(`ServiceOrder`)
 ) ENGINE = InnoDB
  DEFAULT CHARSET = utf8mb4;

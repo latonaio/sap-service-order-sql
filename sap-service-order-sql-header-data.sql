@@ -1,4 +1,4 @@
-CREATE TABLE `sap-service-order-header-data`
+CREATE TABLE `sap_service_order_header_data`
 (
             `ServiceOrder`                        varchar(10) NOT NULL,
 			`ServiceOrderType`                    varchar(4) DEFAULT NULL,
@@ -7,11 +7,11 @@ CREATE TABLE `sap-service-order-header-data`
 			`ServiceObjectType`                   varchar(10) DEFAULT NULL,
 			`Language`                            varchar(2) DEFAULT NULL,
 			`ServiceDocumentPriority`             varchar(1) DEFAULT NULL,
-			`RequestedServiceStartDateTime`       datetime DEFAULT NULL,
-			`RequestedServiceEndDateTime`         datetime DEFAULT NULL,
-			`ServiceDocChangedDateTime`           datetime DEFAULT NULL,
+			`RequestedServiceStartDateTime`       varchar(80) DEFAULT NULL,
+			`RequestedServiceEndDateTime`         varchar(80) DEFAULT NULL,
+			`ServiceDocChangedDateTime`           varchar(80) DEFAULT NULL,
 			`PurchaseOrderByCustomer`             varchar(35) DEFAULT NULL,
-			`CustomerPurchaseOrderDate`           date DEFAULT NULL,
+			`CustomerPurchaseOrderDate`           varchar(80) DEFAULT NULL,
 			`ServiceOrderIsReleased`              varchar(1) DEFAULT NULL,
 			`ServiceOrderIsCompleted`             varchar(1) DEFAULT NULL,
 			`ServiceOrderIsRejected`              varchar(1) DEFAULT NULL,
