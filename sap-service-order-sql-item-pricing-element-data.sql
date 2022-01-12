@@ -10,6 +10,6 @@ CREATE TABLE `sap_service_order_item_pricing_element_data`
 			`ConditionQuantity`             varchar(6) DEFAULT NULL,
 			`ConditionQuantityUnit`         varchar(3) DEFAULT NULL,
   PRIMARY KEY (`ServiceOrder`, `ServiceOrderItem`, `PricingProcedureStep`, `PricingProcedureCounter`),
-  CONSTRAINT `SASPServiceOrderItemPricingElementData_fk` FOREIGN KEY (`ServiceOrder`) REFERENCES`sap_service_order_header_data`(`ServiceOrder`)
+  CONSTRAINT `SASPServiceOrderItemPricingElementData_fk` FOREIGN KEY (`ServiceOrder`) REFERENCES `sap_service_order_header_data`(`ServiceOrder`)
 ) ENGINE = InnoDB
  DEFAULT CHARSET = utf8mb4;

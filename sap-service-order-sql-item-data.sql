@@ -42,6 +42,6 @@ CREATE TABLE `sap_service_order_item_data`
 			`ProfitCenter`                         varchar(10) DEFAULT NULL,
 			`SrvcOrdItemCreditStatus`              varchar(1) DEFAULT NULL,
   PRIMARY KEY (`ServiceOrder`, `ServiceOrderItem`),
-  CONSTRAINT `SAPServiceOrderItemData_fk` FOREIGN KEY (`ServiceOrder`) REFERENCES`sap_service_order_header_data`(`ServiceOrder`)
+  CONSTRAINT `SAPServiceOrderItemData_fk` FOREIGN KEY (`ServiceOrder`) REFERENCES `sap_service_order_header_data`(`ServiceOrder`)
 ) ENGINE = InnoDB
  DEFAULT CHARSET = utf8mb4;
